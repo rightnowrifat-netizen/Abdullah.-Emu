@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdullah ❤️ Emu | Our Love Story</title>
+<meta name="description" content="A little digital universe created for Abdullah and Emu, filled with memories, moments and love.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="hearts" aria-hidden="true"></canvas>
+
+<nav class="nav glass" aria-label="Main">
+  <a href="#home" class="brand">A ❤️ E</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <ul id="menu">
+    <li><a href="#home">Home</a></li><li><a href="#story">Our Story</a></li>
+    <li><a href="#memories">Memories</a></li><li><a href="#letter">Love Letter</a></li>
+    <li><a href="#moments">Moments</a></li><li><a href="#forever">Forever</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+<!-- HERO -->
+<header id="home" class="hero">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <p class="whisper">Some stories are written by fate...</p>
+  <h1 id="title">Abdullah ❤️ Emu</h1>
+  <p class="sub" id="subtitle">Two hearts. One beautiful story.</p>
+  <a href="#story" class="btn">Enter Their Story ❤️</a>
+</header>
+
+<!-- OUR STORY — edit dates, titles, text; add optional <img> inside .tl-body -->
+<section id="story" class="wrap">
+  <h2 class="reveal">Our Story</h2>
+  <div class="timeline">
+    <article class="tl reveal"><span class="dot"></span><div class="tl-body"><time>January 2024</time><h3>First Hello</h3><p>A simple hello that quietly started everything.</p></div></article>
+    <article class="tl reveal"><span class="dot"></span><div class="tl-body"><time>February 2024</time><h3>The First Conversation</h3><p>Hours felt like minutes, and neither wanted it to end.</p></div></article>
+    <article class="tl reveal"><span class="dot"></span><div class="tl-body"><time>Spring 2024</time><h3>The Moment Everything Changed</h3><p>Somewhere between laughter and silence, they knew.</p></div></article>
+    <article class="tl reveal"><span class="dot"></span><div class="tl-body"><time>Ever since</time><h3>Beautiful Memories</h3><p>Little days that became the best ones.</p></div></article>
+    <article class="tl reveal"><span class="dot"></span><div class="tl-body"><time>Today</time><h3>Still Writing Our Story...</h3><p>The best chapters haven't been written yet.</p></div></article>
+  </div>
+</section>
+
+<!-- GALLERY (rendered from CONFIG.gallery in script.js) -->
+<section id="memories" class="wrap">
+  <h2 class="reveal">Little Moments, Big Memories</h2>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<!-- LOVE LETTER -->
+<section id="letter" class="wrap">
+  <h2 class="reveal">For Emu ❤️</h2>
+  <article class="paper reveal">
+    <p>Dear Emu,</p>
+    <p>Some people enter our lives quietly, but somehow become the most beautiful part of our story.</p>
+    <p>Every little conversation, every smile, every memory becomes something worth keeping forever.</p>
+    <p>Abdullah may not always have the perfect words, but there is one thing that should never be questioned...</p>
+    <p><strong>You are special.</strong></p>
+    <p>And this little website is just a tiny collection of the feelings, memories and moments that make your story beautiful.</p>
+    <p class="sign">With love,<br>Abdullah ❤️</p>
+  </article>
+
+  <h2 class="reveal gap">For Abdullah ❤️</h2>
+  <article class="paper reveal">
+    <p>Dear Abdullah,</p>
+    <p>Write Emu's message to you here. Tell him what he means to you, the moment you'll never forget, and what you're looking forward to.</p>
+    <p class="sign">Always yours,<br>Emu ❤️</p>
+  </article>
+</section>
+
+<!-- SPECIAL MOMENTS (rendered from CONFIG.moments) -->
+<section id="moments" class="wrap">
+  <h2 class="reveal">Special Moments</h2>
+  <div class="moments" id="momentGrid"></div>
+</section>
+
+<!-- COUNTER + SURPRISE -->
+<section id="forever" class="wrap center">
+  <h2 class="reveal">How Long They've Been Writing This Story ❤️</h2>
+  <div class="counter reveal" id="counter"></div>
+  <button class="btn" id="surpriseBtn">Open One Last Surprise ❤️</button>
+</section>
+</main>
+
+<footer>
+  <p class="script">Made with love for Abdullah &amp; Emu ❤️</p>
+  <p>Some memories deserve their own little universe.</p>
+  <small>© 2026 Abdullah ❤️ Emu</small>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="close" id="lbClose" aria-label="Close">✕</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<div class="surprise" id="surprise" aria-hidden="true">
+  <div class="sp-hearts" id="spHearts"></div>
+  <div class="sp-text">
+    <div class="bigheart">❤️</div>
+    <p>Some stories don't need a perfect ending...</p>
+    <p>They simply need two people who choose each other,<br>again and again.</p>
+    <h3>Abdullah ❤️ Emu</h3>
+    <p class="script">Forever is a beautiful word when it has your name in it.</p>
+    <button class="btn" id="spClose">Close</button>
+  </div>
+</div>
+
+<button class="music" id="music" aria-label="Play music">🎵</button>
+<audio id="audio" loop preload="none"></audio>
+<script src="script.js"></script>
+</body>
+</html>
